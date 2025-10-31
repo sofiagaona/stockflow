@@ -1,19 +1,27 @@
-'use client';
-import { createTheme } from '@mui/material/styles';
+"use client";
+import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
   palette: {
-    mode: 'light',
-    primary: { main: '#3f51b5' },
-    secondary: { main: '#f50057' },
+    mode: "light",
+    primary: { main: "#3f51b5" },
+    secondary: { main: "#f50057" },
   },
   shape: { borderRadius: 12 },
   typography: {
-    fontFamily: ['Inter', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'].join(','),
+    fontFamily: [
+      "Inter",
+      "system-ui",
+      "Segoe UI",
+      "Roboto",
+      "Helvetica",
+      "Arial",
+      "sans-serif",
+    ].join(","),
   },
   components: {
     MuiButton: {
-      defaultProps: { variant: 'contained' },
+      defaultProps: { variant: "contained" },
     },
   },
 });

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { MuiProvider } from "../../providers/MuiProvider";
+import { AppProviders } from "../../providers/AppProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,12 +27,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <MuiProvider>
-         
-            <h1>StockFlow</h1>
-            {children}
-        
-        </MuiProvider>
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );
